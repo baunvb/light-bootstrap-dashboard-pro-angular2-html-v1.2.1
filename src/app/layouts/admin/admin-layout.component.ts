@@ -19,7 +19,7 @@ export class AdminLayoutComponent implements OnInit {
 
     @ViewChild('sidebar') sidebar;
     @ViewChild(NavbarComponent) navbar: NavbarComponent;
-    constructor( private router: Router, location:Location ) {
+    constructor( private router: Router, location: Location ) {
       this.location = location;
     }
 
@@ -29,10 +29,10 @@ export class AdminLayoutComponent implements OnInit {
           this.navbar.sidebarClose();
         });
 
-        var isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
-        if (isWindows){
+        const isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
+        if (isWindows) {
         // if we are on windows OS we activate the perfectScrollbar function
-            var $main_panel = $('.main-panel');
+            const $main_panel = $('.main-panel');
             $main_panel.perfectScrollbar();
         }
 

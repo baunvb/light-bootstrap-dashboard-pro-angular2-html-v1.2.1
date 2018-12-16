@@ -279,9 +279,13 @@ Instagram: <https://instagram.com/creativetimofficial>
 
 <!-- [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg -->
 
+##Modify Baunv
+
 CREATE NEW COMPONENT
-ng g c admin --module app
+```ng g c admin --module app```
+
 CREATE NEW MODULE
-ng generate module admin
+```ng generate module admin```
+
 CREATE NEW ROUTING
-ng generate module admin-routing --flat --module=admin
+```ng generate module admin-routing --flat --module=admin```

@@ -32,11 +32,11 @@ export const AppRoutes: Routes = [{
             path: 'calendar',
             loadChildren: './calendar/calendar.module#CalendarModule'
         }, {
-            path: '',
-            loadChildren: './userpage/user.module#UserModule'
-        }, {
             path: 'admin',
             loadChildren: './admin/admin.module#AdminModule'
+        }, {
+            path: '',
+            loadChildren: './userpage/user.module#UserModule'
         }]
         }, {
             path: '',

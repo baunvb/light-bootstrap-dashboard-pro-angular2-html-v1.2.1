@@ -9,10 +9,10 @@ export const PagesRoutes: Routes = [{
     children: [ {
         path: 'login',
         component: LoginComponent
-    },{
+    }, {
         path: 'lock',
         component: LockComponent
-    },{
+    }, {
         path: 'register',
         component: RegisterComponent
     }]

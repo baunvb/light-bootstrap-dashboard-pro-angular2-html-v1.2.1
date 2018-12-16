@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
 import {BrowserModule} from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -17,15 +17,16 @@ import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 import { AppRoutes } from './app.routing';
 import {JwBootstrapSwitchNg2Module} from 'jw-bootstrap-switch-ng2';
+import {HomestayService} from './admin/homestay/homestay.service';
 
 @NgModule({
     imports:      [
         BrowserModule.withServerTransition({appId: 'pd-pro-angularcli'}),
+        HttpClientModule,
         BrowserAnimationsModule,
         JwBootstrapSwitchNg2Module,
         FormsModule,
         RouterModule.forRoot(AppRoutes),
-        HttpModule,
         SidebarModule,
         NavbarModule,
         FooterModule,
@@ -37,6 +38,7 @@ import {JwBootstrapSwitchNg2Module} from 'jw-bootstrap-switch-ng2';
         AdminLayoutComponent,
         AuthLayoutComponent
     ],
+    providers: [HomestayService],
     bootstrap: [ AppComponent ]
 })
 
