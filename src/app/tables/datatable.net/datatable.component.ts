@@ -18,7 +18,7 @@ export class DataTableComponent implements OnInit {
     public dataTable;
     ngOnInit() {
         this.dataTable = {
-            headerRow: [ 'Name1', 'Position', 'Office', 'Age', 'Date', 'Actions' ],
+            headerRow: [ 'Name', 'Position', 'Office', 'Age', 'Date', 'Actions' ],
             footerRow: [ 'Name', 'Position', 'Office', 'Age', 'Start Date', 'Actions' ],
             dataRows: [
                 ['Airi Satou', 'Andrew Mike', 'Develop', '2013', '99,225', ''],

@@ -14,8 +14,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "restart": "npm run webpack:server && npm run serve:ssr",
     "serve:ssr": "node dist/server.js",
-    "build:client-and-server-bundles": "ng build --prod && ng run pd-pro-angularcli:server",
+    "build:client-and-server-bundles": "ng build && ng run pd-pro-angularcli:server",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,

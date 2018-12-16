@@ -59,7 +59,37 @@ app.set('views', join(DIST_FOLDER, 'browser'));
 
 app.get('/api/data', (req, res) => {
     res.send({
-        name: 'Nguyễn Văn Báu ver2'
+        homestay: [
+            {
+                id: '1',
+                name: 'homestay 1',
+                address: '1tr Pham Van Bach street, HN'
+            }, {
+                id: '2',
+                name: 'homestay 2',
+                address: '2tr Pham Van Bach street, HN'
+            }, {
+                id: '3',
+                name: 'homestay 4',
+                address: '3tr Pham Van Bach street, HN'
+            }, {
+                id: '5',
+                name: 'homestay 5',
+                address: '5tr Pham Van Bach street, HN'
+            }, {
+                id: '6',
+                name: 'homestay 6',
+                address: '6tr Pham Van Bach street, HN'
+            }, {
+                id: '1',
+                name: 'homestay 1',
+                address: '1str Pham Van Bach street, HN'
+            }, {
+                id: '2',
+                name: 'homestay 1',
+                address: '1str Pham Van Bach street, HN'
+            }
+        ]
     })
 })
 

@@ -5,6 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable} from 'rxjs/Observable';
 import { catchError, map, tap } from 'rxjs/operators';
 import { User } from '../interface/user';
+import {Homestay} from '../interface/homestay';
 
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -19,8 +20,8 @@ export class HomestayService {
         private http: HttpClient) { }
 
     /** GET heroes from the server */
-    getData (): Observable<User> {
-        return this.http.get<User>(this.homestayApiUrl, {responseType: 'json'});
+    getHomestay (): Observable<any> {
+        return this.http.get(this.homestayApiUrl, {responseType: 'json'});
 
     }
 
